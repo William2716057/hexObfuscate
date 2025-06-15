@@ -1,7 +1,7 @@
 $file = Read-Host "Enter file"
 
 if (Test-Path $file) {
-    $hexDump = (Format-Hex -Path $file | Out-String)
+    $hexDump = (Format-Hex -Path $file | Where-Object { $_ -notmatch '^Path\s+:\s' }) -join "`n"
 } else {
     Write-Host "Not found"
     exit
