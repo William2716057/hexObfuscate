@@ -78,3 +78,16 @@ Write-Host $encrypted
 33333343   07 98 9H 07 53 07 9I 53 99 92 9F 9F 53 07 91 98  CNWC CX ORUU CQN
 33333353   53 07 98 01 07 53 99 92 9F 98 3D                  CNGC ORUN.
 ```
+## Usage
+1. Open PowerShell
+2. Go to current directory
+3. Enter ./HexObfuscate
+4. Enter file to obfuscate
+
+```
+./hexObfuscate.ps1
+Enter file: sample.txt
+33333333   87 91 92 06 53 92 06 53 06 9I 9G 98 53 96 9I 9H  WQRB RB BXVN LXW
+33333343   07 98 9H 07 53 07 9I 53 99 92 9F 9F 53 07 91 98  CNWC CX ORUU CQN
+33333353   53 07 98 01 07 53 99 92 9F 98 3D                  CNGC ORUN.
+```
