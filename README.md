@@ -10,6 +10,7 @@ It supports shifting letters (A-Z, a-z) and digits (0-9), while leaving punctuat
 4. Applies a Caesar cipher shift (default: 3) to all alphabetic and numeric characters.
 5. Outputs the encrypted result to the console.
 
+## encryption script
 ```
 $file = Read-Host "Enter file"
 
@@ -54,6 +55,26 @@ function Caesar-Cipher {
 
 $shift = 3
 $encrypted = Caesar-Cipher -Text $hexDump -Shift $shift
+           33 34 35 36 37 38 39 30 31 32 3D 3E 3F 3G 3H 3I
+
 
 Write-Host $encrypted
+```
+## Sample input 
+```
+           00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00000000   54 68 69 73 20 69 73 20 73 6F 6D 65 20 63 6F 6E  This is some con
+00000010   74 65 6E 74 20 74 6F 20 66 69 6C 6C 20 74 68 65  tent to fill the
+00000020   20 74 65 78 74 20 66 69 6C 65 0A                  text file.
+```
+
+## Sample output (shift = 3)
+
+```
+           33 34 35 36 37 38 39 30 31 32 3D 3E 3F 3G 3H 3I
+
+33333333   87 91 92 06 53 92 06 53 06 9I 9G 98 53 96 9I 9H  WQRB RB BXVN LXW
+33333343   07 98 9H 07 53 07 9I 53 99 92 9F 9F 53 07 91 98  CNWC CX ORUU CQN
+33333353   53 07 98 01 07 53 99 92 9F 98 3D                  CNGC ORUN.
 ```
